@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f5a7d0"><title>For Fiaa ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="pink-noise"></div><div class="aurora aurora-a"></div><div class="aurora aurora-b"></div><div id="sparkles"></div>
+
+<section class="screen active" id="catScreen">
+ <div class="window-card opening">
+  <div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">a little surprise for fiaa ♡</span></div>
+  <div class="windowbody">
+   <div class="pixel-label">♡ SPECIAL DELIVERY ♡</div>
+   <div class="cat-stage"><div class="blob"></div><img id="openingCat" src="assets/Cat01.png" alt="cute cat"></div>
+   <h1>Do you wanna open<br>my surprise? 🥹</h1>
+   <p class="sub">i made this tiny little corner of the internet just for you</p>
+   <div class="choice-row"><button class="glass-btn hot" onclick="catYes()">yes, obviously ♡</button><button class="glass-btn" onclick="catNo()">no 😾</button></div>
+   <div class="reply" id="catReply"></div>
+  </div>
+ </div>
+</section>
+
+<section class="screen" id="noScreen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">excuse me???</span></div><div class="windowbody"><div class="cat-stage small"><img src="assets/Cat2.png" alt="sad cat"></div><h1>HOW DARE YOU 😭</h1><p class="sub">you really clicked no on <i>my</i> surprise??</p><button class="glass-btn hot" onclick="catBackYes()">okay okay, open it ♡</button></div></div></section>
+
+<section class="screen" id="yesScreen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">yayyyyy!!</span></div><div class="windowbody"><div class="cat-stage small"><img src="assets/Cat03.png" alt="happy cat"></div><h1>YAYYYYY!! 🥹💗</h1><p class="sub">i knew you would choose yes…</p><button class="glass-btn hot" onclick="toCat4()">continue ♡</button></div></div></section>
+
+<section class="screen" id="cat4Screen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">told you so ♡</span></div><div class="windowbody"><div class="cat-stage small"><img src="assets/Cat4.png" alt="cute cat"></div><div class="pixel-label">I KNEW IT ✦</div><h1>I knew you'd say yes. 😭🤍</h1><p class="sub">now come on, Kuchu Puchu… remember our first little hello?</p><button class="glass-btn hot" onclick="show('pinScreen')">okay, one tiny secret →</button></div></div></section>
+
+<section class="screen" id="pinScreen"><div class="window-card pin"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">our little hello</span></div><div class="windowbody"><div class="pixel-label">♡ MEMORY LOCK ♡</div><h1>Remember our first little hello?</h1><p class="sub">enter the date you first texted me</p><div class="pin-wrap"><input id="pin" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off" oninput="checkPin()"><span id="pinReveal">2912</span></div><p class="error" id="pinError"></p></div></div></section>
+
+<section class="screen" id="heroScreen"><div class="hero-window window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">for fiaa ♡</span></div><div class="windowbody hero"><div class="floating-sticker">✦</div><div class="pixel-label">LOWKEY IMPORTANT</div><h1>Lowkey, the best thing that ever happened to me is that you were born.</h1><p>Like… imagine if you never existed?? I genuinely can’t. 😭 The fact that the girl I’m so stupidly in love with actually exists, and somehow ended up in my life… like??? how did I get this lucky 🫠🤍</p><button class="glass-btn hot" onclick="show('interactiveScreen')">there's more… 🥹</button></div></div></section>
+
+<section class="screen" id="interactiveScreen"><div class="window-card wide"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">little pieces of you ♡</span></div><div class="windowbody"><div class="pixel-label">♡ LITTLE PIECES OF YOU ♡</div><h1>One by one, baby.</h1><p class="sub">tap the little cat to uncover what's behind it 🐱</p><div class="one-by-one" id="interactiveStage"></div><div class="progress" id="progress"></div></div></div></section>
+
+<section class="screen" id="sliderScreen"><div class="window-card wide"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">and then… you ♡</span></div><div class="windowbody"><div class="pixel-label">♡ CAMERA ROLL OF MY FAVOURITE GIRL ♡</div><h1>I could look at you forever.</h1><div class="cinema"><button class="round-btn" onclick="slide(-1)" aria-label="previous photo">‹</button><div class="cinema-frame"><img id="slideImage" src="images/21.jpg" alt="Fia photo"><div class="slide-count" id="slideCount">1 / 6</div></div><button class="round-btn" onclick="slide(1)" aria-label="next photo">›</button></div><div class="dots" id="slideDots"></div><p class="slide-caption" id="sliderNote"></p><button class="glass-btn hot" onclick="show('wishesScreen')">there's more for my Kuchu Puchu ✨</button></div></div></section>
+
+<section class="screen" id="wishesScreen"><div class="window-card wide"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">for my Kuchu Puchu ♡</span></div><div class="windowbody"><div class="pixel-label">♡ FOR MY KUCHU PUCHU ♡</div><h1>For my Kuchu Puchu 🤍</h1><div class="wish-grid" id="wishGrid"></div><button class="glass-btn hot" onclick="show('birthdayScreen')">one last little thing 🎂</button></div></div></section>
+
+<section class="screen" id="birthdayScreen"><div class="window-card wide"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">birthday mode ♡</span></div><div class="windowbody birthday"><div class="pixel-label">♡ BIRTHDAY GIRL DETECTED ♡</div><h1>Make a wish, Fiaa 🎂</h1><div class="birthday-stage"><div class="wish-glow"></div><div class="birthday-cat"><img src="assets/Cat5.png" alt="birthday cat"></div><div class="cake-overlay" aria-hidden="true"><span class="candle c1"></span><span class="candle c2"></span><span class="candle c3"></span></div></div><p id="cakeText" class="sub">tap the cake when you've made your wish 🥹</p><button class="glass-btn hot hidden" id="letterButton" onclick="startFinale()">okay… your letter awaits 💌</button></div></div></section>
+
+<section class="screen finale" id="letterScreen">
+ <video id="fireworks" muted playsinline preload="auto"><source src="fireworks.mp4" type="video/mp4"></video><div class="finale-vignette"></div>
+ <div class="finale-prelude" id="finalePrelude">
+  <div class="apple-glass" id="player">
+   <img class="album-art" src="assets/album-cover.jpg" alt="The Metro Proposal album cover">
+   <div class="track-meta"><b>The Metro Proposal</b><span>for my Fiaa ♡</span><div class="bar"><i id="seek"></i></div><div class="times"><span id="elapsed">0:00</span><span id="duration">3:18</span></div></div>
+   <button class="play-small" id="songBtn" onclick="playFinale()" aria-label="Play The Metro Proposal">▶︎</button>
+  </div>
+  <div class="prelude-caption">a little song before the ending ♡</div>
+ </div>
+ <article class="final-letter hidden" id="finalLetter"><div class="glass-shine"></div><div class="pixel-label">♡ FOR MY GIRL, MY LOVE, MY WIFE ♡</div><h1>Happiest birthday, My Girl, My Love, My Wife 🤍🤌🏼</h1><p>I hope this year is gentle with you. I hope you get everything your heart has been quietly wishing for, and I hope you never forget that there’s someone here who’s ridiculously proud to love you.</p><p>I still can't believe I got you in this lifetime. Out of all the people I could've met, somehow I met you. And somehow, you became this incredibly important part of my life.</p><p>So yeah… today is your birthday, but I’m the one feeling lucky. Lucky that you were born. Lucky that I found you. Lucky that I get to know you, love you, annoy you, laugh with you, and be there for all the little versions of you. 😭🫂</p><p>And my <b>Kuchu Puchu</b>… you deserve so much more than I could ever fit into this little card. I just wish I could be there right now, squeeze you so freaking tight, cover your face with kisses and annoy you with all the love I’ve been saving up for when we finally meet. 😭👉🏼👈🏼</p><p>And no matter how many birthdays come after this one, I’ll always be grateful that this day gave me you. 🫠🫀🤍</p><p class="signature">I love youuu....<br><b>Happiest birthday, Fia ma 🤌🏼🫂😘</b></p></article>
+</section>
+<audio id="music" preload="metadata"><source src="The metro proposal_320k.mp3" type="audio/mpeg"></audio>
+<script src="script.js"></script>
+</body></html>
