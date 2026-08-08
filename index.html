@@ -15,7 +15,7 @@
   <div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">a little surprise for fiaa ♡</span></div>
   <div class="windowbody">
    <div class="pixel-label">♡ SPECIAL DELIVERY ♡</div>
-   <div class="cat-stage"><div class="blob"></div><img id="openingCat" src="assets/Cat01.png" alt="cute cat"></div>
+   <div class="cat-stage"><div class="blob"></div><img id="openingCat" src="images/Cat01.png" alt="cute cat"></div>
    <h1>Do you wanna open<br>my surprise? 🥹</h1>
    <p class="sub">i made this tiny little corner of the internet just for you</p>
    <div class="choice-row"><button class="glass-btn hot" onclick="catYes()">yes, obviously ♡</button><button class="glass-btn" onclick="catNo()">no 😾</button></div>
@@ -24,11 +24,11 @@
  </div>
 </section>
 
-<section class="screen" id="noScreen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">excuse me???</span></div><div class="windowbody"><div class="cat-stage small"><img src="assets/Cat2.png" alt="sad cat"></div><h1>HOW DARE YOU 😭</h1><p class="sub">you really clicked no on <i>my</i> surprise??</p><button class="glass-btn hot" onclick="catBackYes()">okay okay, open it ♡</button></div></div></section>
+<section class="screen" id="noScreen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">excuse me???</span></div><div class="windowbody"><div class="cat-stage small"><img src="images/Cat2.png" alt="sad cat"></div><h1>HOW DARE YOU 😭</h1><p class="sub">you really clicked no on <i>my</i> surprise??</p><button class="glass-btn hot" onclick="catBackYes()">okay okay, open it ♡</button></div></div></section>
 
-<section class="screen" id="yesScreen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">yayyyyy!!</span></div><div class="windowbody"><div class="cat-stage small"><img src="assets/Cat03.png" alt="happy cat"></div><h1>YAYYYYY!! 🥹💗</h1><p class="sub">i knew you would choose yes…</p><button class="glass-btn hot" onclick="toCat4()">continue ♡</button></div></div></section>
+<section class="screen" id="yesScreen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">yayyyyy!!</span></div><div class="windowbody"><div class="cat-stage small"><img src="images/Cat03.png" alt="happy cat"></div><h1>YAYYYYY!! 🥹💗</h1><p class="sub">i knew you would choose yes…</p><button class="glass-btn hot" onclick="toCat4()">continue ♡</button></div></div></section>
 
-<section class="screen" id="cat4Screen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">told you so ♡</span></div><div class="windowbody"><div class="cat-stage small"><img src="assets/Cat4.png" alt="cute cat"></div><div class="pixel-label">I KNEW IT ✦</div><h1>I knew you'd say yes. 😭🤍</h1><p class="sub">now come on, Kuchu Puchu… remember our first little hello?</p><button class="glass-btn hot" onclick="show('pinScreen')">okay, one tiny secret →</button></div></div></section>
+<section class="screen" id="cat4Screen"><div class="window-card"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">told you so ♡</span></div><div class="windowbody"><div class="cat-stage small"><img src="images/Cat4.png" alt="cute cat"></div><div class="pixel-label">I KNEW IT ✦</div><h1>I knew you'd say yes. 😭🤍</h1><p class="sub">now come on, Kuchu Puchu… remember our first little hello?</p><button class="glass-btn hot" onclick="show('pinScreen')">okay, one tiny secret →</button></div></div></section>
 
 <section class="screen" id="pinScreen"><div class="window-card pin"><div class="windowbar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="window-title">our little hello</span></div><div class="windowbody"><div class="pixel-label">♡ MEMORY LOCK ♡</div><h1>Remember our first little hello?</h1><p class="sub">enter the date you first texted me</p><div class="pin-wrap"><input id="pin" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off" oninput="checkPin()"><span id="pinReveal">2912</span></div><p class="error" id="pinError"></p></div></div></section>
 
@@ -46,7 +46,7 @@
  <video id="fireworks" muted playsinline preload="auto"><source src="fireworks.mp4" type="video/mp4"></video><div class="finale-vignette"></div>
  <div class="finale-prelude" id="finalePrelude">
   <div class="apple-glass" id="player">
-   <img class="album-art" src="assets/album-cover.jpg" alt="The Metro Proposal album cover">
+   <img class="album-art" src="images/album-cover.jpg" alt="The Metro Proposal album cover">
    <div class="track-meta"><b>The Metro Proposal</b><span>for my Fiaa ♡</span><div class="bar"><i id="seek"></i></div><div class="times"><span id="elapsed">0:00</span><span id="duration">3:18</span></div></div>
    <button class="play-small" id="songBtn" onclick="playFinale()" aria-label="Play The Metro Proposal">▶︎</button>
   </div>
