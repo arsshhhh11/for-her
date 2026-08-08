@@ -5,7 +5,7 @@ const interactive=[
  ['14.jpg','im not melting 🫠🤌🏻',"this face??yeah no.when we meet I'm absolutely squishing your cheeks consider urself warned😭🤌🏻"],
  ['15.jpg',"I can't help falling👉🏻👈🏻",'somehow you keep getting prettier and i keep falling harder.how this even fair 😭']
 ];
-const hiddenCats=['hidden cat1.jpg','hidden cat2.jpg','hidden cat3.jpg','hidden cat4.jpg','hidden cat5.jpg'];
+const hiddenCats=['images/hidden cat1.jpg','images/hidden cat2.jpg','images/hidden cat3.jpg','images/hidden cat4.jpg','images/hidden cat5.jpg'];
 const slides=[['21.jpg','your eyes, your smile… everything about you feels like home 🤍'],['22.jpg','how am I supposed to act normal when you look like this 😭'],['23.jpg','my pretty girl, forever my favourite view 🫠🫀'],['24.jpg','that little smile is genuinely one of my favourite things in this world 🤏🏼'],['25.jpg','I’d still choose you in every version of every lifetime 🤍'],['26.jpg','and somehow you just keep getting more beautiful to me 🫂']];
 const wishes=[
  ['♡ WISH #1','May we keep choosing each other, growing together, and making a thousand more memories. 🫂🤍'],
